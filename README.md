@@ -42,6 +42,7 @@ See [the full list](.kubectl_aliases).
 You can directly download the [`.kubectl_aliases` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases)
 for bash/zsh or the [`.kubectl_aliases.fish` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases.fish) for fish
 or the [`.kubectl_aliases.nu` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases.nu) for Nushell
+or the [`.kubectl_aliases.ps1` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases.ps1) for PowerShell
 and save it to your `$HOME` directory.
 
 #### Bash/Zsh
@@ -90,6 +91,14 @@ Add the following to your `~/.config/nushell/config.nu` file:
 source ~/.kubectl_aliases.nu
 ```
 
+#### PowerShell
+
+Add the following to your `~/.config/powershell/Microsoft.PowerShell_profile.ps1` file:
+
+```nushell
+. ~/.kubectl_aliases.ps1
+```
+
 ### Syntax explanation
 
 * **`k`**: `kubectl`
@@ -135,6 +144,9 @@ python generate_aliases.py fish > .kubectl_aliases.fish
 
 # Generate aliases for nushell
 python generate_aliases.py nushell > .kubectl_aliases.nu
+
+# Generate aliases for PowerShell
+python generate_aliases.py pwsh > .kubectl_aliases.ps1
 ```
 
 ### FAQ
