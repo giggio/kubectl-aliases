@@ -149,6 +149,17 @@ python generate_aliases.py nushell > .kubectl_aliases.nu
 python generate_aliases.py pwsh > .kubectl_aliases.ps1
 ```
 
+You can add a second argument equals to `true` to generate `kubecolor` aliases, like so:
+
+```bash
+./generate_aliases.py bash true > .kubecolor_aliases
+./generate_aliases.py fish true > .kubecolor_aliases.fish
+./generate_aliases.py nushell true > .kubecolor_aliases.nu
+./generate_aliases.py pwsh true > .kubecolor_aliases.ps1
+```
+
+If you do that, the first argument is required.
+
 ### FAQ
 
 - **Doesn't this slow down my shell start up?** Sourcing the file that contains
