@@ -28,7 +28,11 @@ except NameError:
 
 def main():
     # (alias, full, allow_when_oneof, incompatible_with)
-    cmds = [('k', 'kubectl', None, None)]
+    use_kubecolor = sys.argv[2] if len(sys.argv) > 2 else ''
+    if use_kubecolor == 'true':
+        cmds = [('k', 'kubecolor', None, None)]
+    else:
+        cmds = [('k', 'kubectl', None, None)]
 
     globs = [('sys', '--namespace=kube-system', None, None)]
 
