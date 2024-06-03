@@ -224,24 +224,6 @@ function kgingalloyaml() { & kubectl get ingress --all-namespaces -o=yaml $args 
 function kgcmalloyaml() { & kubectl get configmap --all-namespaces -o=yaml $args }
 function kgsecalloyaml() { & kubectl get secret --all-namespaces -o=yaml $args }
 function kgnsalloyaml() { & kubectl get namespaces --all-namespaces -o=yaml $args }
-function kgwoyaml() { & kubectl get --watch -o=yaml $args }
-function ksysgwoyaml() { & kubectl --namespace=kube-system get --watch -o=yaml $args }
-function kgpowoyaml() { & kubectl get pods --watch -o=yaml $args }
-function ksysgpowoyaml() { & kubectl --namespace=kube-system get pods --watch -o=yaml $args }
-function kgdepwoyaml() { & kubectl get deployment --watch -o=yaml $args }
-function ksysgdepwoyaml() { & kubectl --namespace=kube-system get deployment --watch -o=yaml $args }
-function kgstswoyaml() { & kubectl get statefulset --watch -o=yaml $args }
-function ksysgstswoyaml() { & kubectl --namespace=kube-system get statefulset --watch -o=yaml $args }
-function kgsvcwoyaml() { & kubectl get service --watch -o=yaml $args }
-function ksysgsvcwoyaml() { & kubectl --namespace=kube-system get service --watch -o=yaml $args }
-function kgingwoyaml() { & kubectl get ingress --watch -o=yaml $args }
-function ksysgingwoyaml() { & kubectl --namespace=kube-system get ingress --watch -o=yaml $args }
-function kgcmwoyaml() { & kubectl get configmap --watch -o=yaml $args }
-function ksysgcmwoyaml() { & kubectl --namespace=kube-system get configmap --watch -o=yaml $args }
-function kgsecwoyaml() { & kubectl get secret --watch -o=yaml $args }
-function ksysgsecwoyaml() { & kubectl --namespace=kube-system get secret --watch -o=yaml $args }
-function kgnowoyaml() { & kubectl get nodes --watch -o=yaml $args }
-function kgnswoyaml() { & kubectl get namespaces --watch -o=yaml $args }
 function kgowideall() { & kubectl get -o=wide --all-namespaces $args }
 function kgpoowideall() { & kubectl get pods -o=wide --all-namespaces $args }
 function kgdepowideall() { & kubectl get deployment -o=wide --all-namespaces $args }
@@ -296,24 +278,6 @@ function kgsecslowide() { & kubectl get secret --show-labels -o=wide $args }
 function ksysgsecslowide() { & kubectl --namespace=kube-system get secret --show-labels -o=wide $args }
 function kgnoslowide() { & kubectl get nodes --show-labels -o=wide $args }
 function kgnsslowide() { & kubectl get namespaces --show-labels -o=wide $args }
-function kgwowide() { & kubectl get --watch -o=wide $args }
-function ksysgwowide() { & kubectl --namespace=kube-system get --watch -o=wide $args }
-function kgpowowide() { & kubectl get pods --watch -o=wide $args }
-function ksysgpowowide() { & kubectl --namespace=kube-system get pods --watch -o=wide $args }
-function kgdepwowide() { & kubectl get deployment --watch -o=wide $args }
-function ksysgdepwowide() { & kubectl --namespace=kube-system get deployment --watch -o=wide $args }
-function kgstswowide() { & kubectl get statefulset --watch -o=wide $args }
-function ksysgstswowide() { & kubectl --namespace=kube-system get statefulset --watch -o=wide $args }
-function kgsvcwowide() { & kubectl get service --watch -o=wide $args }
-function ksysgsvcwowide() { & kubectl --namespace=kube-system get service --watch -o=wide $args }
-function kgingwowide() { & kubectl get ingress --watch -o=wide $args }
-function ksysgingwowide() { & kubectl --namespace=kube-system get ingress --watch -o=wide $args }
-function kgcmwowide() { & kubectl get configmap --watch -o=wide $args }
-function ksysgcmwowide() { & kubectl --namespace=kube-system get configmap --watch -o=wide $args }
-function kgsecwowide() { & kubectl get secret --watch -o=wide $args }
-function ksysgsecwowide() { & kubectl --namespace=kube-system get secret --watch -o=wide $args }
-function kgnowowide() { & kubectl get nodes --watch -o=wide $args }
-function kgnswowide() { & kubectl get namespaces --watch -o=wide $args }
 function kgojsonall() { & kubectl get -o=json --all-namespaces $args }
 function kgpoojsonall() { & kubectl get pods -o=json --all-namespaces $args }
 function kgdepojsonall() { & kubectl get deployment -o=json --all-namespaces $args }
@@ -332,24 +296,6 @@ function kgingallojson() { & kubectl get ingress --all-namespaces -o=json $args 
 function kgcmallojson() { & kubectl get configmap --all-namespaces -o=json $args }
 function kgsecallojson() { & kubectl get secret --all-namespaces -o=json $args }
 function kgnsallojson() { & kubectl get namespaces --all-namespaces -o=json $args }
-function kgwojson() { & kubectl get --watch -o=json $args }
-function ksysgwojson() { & kubectl --namespace=kube-system get --watch -o=json $args }
-function kgpowojson() { & kubectl get pods --watch -o=json $args }
-function ksysgpowojson() { & kubectl --namespace=kube-system get pods --watch -o=json $args }
-function kgdepwojson() { & kubectl get deployment --watch -o=json $args }
-function ksysgdepwojson() { & kubectl --namespace=kube-system get deployment --watch -o=json $args }
-function kgstswojson() { & kubectl get statefulset --watch -o=json $args }
-function ksysgstswojson() { & kubectl --namespace=kube-system get statefulset --watch -o=json $args }
-function kgsvcwojson() { & kubectl get service --watch -o=json $args }
-function ksysgsvcwojson() { & kubectl --namespace=kube-system get service --watch -o=json $args }
-function kgingwojson() { & kubectl get ingress --watch -o=json $args }
-function ksysgingwojson() { & kubectl --namespace=kube-system get ingress --watch -o=json $args }
-function kgcmwojson() { & kubectl get configmap --watch -o=json $args }
-function ksysgcmwojson() { & kubectl --namespace=kube-system get configmap --watch -o=json $args }
-function kgsecwojson() { & kubectl get secret --watch -o=json $args }
-function ksysgsecwojson() { & kubectl --namespace=kube-system get secret --watch -o=json $args }
-function kgnowojson() { & kubectl get nodes --watch -o=json $args }
-function kgnswojson() { & kubectl get namespaces --watch -o=json $args }
 function kgallsl() { & kubectl get --all-namespaces --show-labels $args }
 function kgpoallsl() { & kubectl get pods --all-namespaces --show-labels $args }
 function kgdepallsl() { & kubectl get deployment --all-namespaces --show-labels $args }
@@ -422,33 +368,6 @@ function kgsecwsl() { & kubectl get secret --watch --show-labels $args }
 function ksysgsecwsl() { & kubectl --namespace=kube-system get secret --watch --show-labels $args }
 function kgnowsl() { & kubectl get nodes --watch --show-labels $args }
 function kgnswsl() { & kubectl get namespaces --watch --show-labels $args }
-function kgallwoyaml() { & kubectl get --all-namespaces --watch -o=yaml $args }
-function kgpoallwoyaml() { & kubectl get pods --all-namespaces --watch -o=yaml $args }
-function kgdepallwoyaml() { & kubectl get deployment --all-namespaces --watch -o=yaml $args }
-function kgstsallwoyaml() { & kubectl get statefulset --all-namespaces --watch -o=yaml $args }
-function kgsvcallwoyaml() { & kubectl get service --all-namespaces --watch -o=yaml $args }
-function kgingallwoyaml() { & kubectl get ingress --all-namespaces --watch -o=yaml $args }
-function kgcmallwoyaml() { & kubectl get configmap --all-namespaces --watch -o=yaml $args }
-function kgsecallwoyaml() { & kubectl get secret --all-namespaces --watch -o=yaml $args }
-function kgnsallwoyaml() { & kubectl get namespaces --all-namespaces --watch -o=yaml $args }
-function kgwoyamlall() { & kubectl get --watch -o=yaml --all-namespaces $args }
-function kgpowoyamlall() { & kubectl get pods --watch -o=yaml --all-namespaces $args }
-function kgdepwoyamlall() { & kubectl get deployment --watch -o=yaml --all-namespaces $args }
-function kgstswoyamlall() { & kubectl get statefulset --watch -o=yaml --all-namespaces $args }
-function kgsvcwoyamlall() { & kubectl get service --watch -o=yaml --all-namespaces $args }
-function kgingwoyamlall() { & kubectl get ingress --watch -o=yaml --all-namespaces $args }
-function kgcmwoyamlall() { & kubectl get configmap --watch -o=yaml --all-namespaces $args }
-function kgsecwoyamlall() { & kubectl get secret --watch -o=yaml --all-namespaces $args }
-function kgnswoyamlall() { & kubectl get namespaces --watch -o=yaml --all-namespaces $args }
-function kgwalloyaml() { & kubectl get --watch --all-namespaces -o=yaml $args }
-function kgpowalloyaml() { & kubectl get pods --watch --all-namespaces -o=yaml $args }
-function kgdepwalloyaml() { & kubectl get deployment --watch --all-namespaces -o=yaml $args }
-function kgstswalloyaml() { & kubectl get statefulset --watch --all-namespaces -o=yaml $args }
-function kgsvcwalloyaml() { & kubectl get service --watch --all-namespaces -o=yaml $args }
-function kgingwalloyaml() { & kubectl get ingress --watch --all-namespaces -o=yaml $args }
-function kgcmwalloyaml() { & kubectl get configmap --watch --all-namespaces -o=yaml $args }
-function kgsecwalloyaml() { & kubectl get secret --watch --all-namespaces -o=yaml $args }
-function kgnswalloyaml() { & kubectl get namespaces --watch --all-namespaces -o=yaml $args }
 function kgowideallsl() { & kubectl get -o=wide --all-namespaces --show-labels $args }
 function kgpoowideallsl() { & kubectl get pods -o=wide --all-namespaces --show-labels $args }
 function kgdepowideallsl() { & kubectl get deployment -o=wide --all-namespaces --show-labels $args }
@@ -503,114 +422,6 @@ function kgingslallowide() { & kubectl get ingress --show-labels --all-namespace
 function kgcmslallowide() { & kubectl get configmap --show-labels --all-namespaces -o=wide $args }
 function kgsecslallowide() { & kubectl get secret --show-labels --all-namespaces -o=wide $args }
 function kgnsslallowide() { & kubectl get namespaces --show-labels --all-namespaces -o=wide $args }
-function kgallwowide() { & kubectl get --all-namespaces --watch -o=wide $args }
-function kgpoallwowide() { & kubectl get pods --all-namespaces --watch -o=wide $args }
-function kgdepallwowide() { & kubectl get deployment --all-namespaces --watch -o=wide $args }
-function kgstsallwowide() { & kubectl get statefulset --all-namespaces --watch -o=wide $args }
-function kgsvcallwowide() { & kubectl get service --all-namespaces --watch -o=wide $args }
-function kgingallwowide() { & kubectl get ingress --all-namespaces --watch -o=wide $args }
-function kgcmallwowide() { & kubectl get configmap --all-namespaces --watch -o=wide $args }
-function kgsecallwowide() { & kubectl get secret --all-namespaces --watch -o=wide $args }
-function kgnsallwowide() { & kubectl get namespaces --all-namespaces --watch -o=wide $args }
-function kgwowideall() { & kubectl get --watch -o=wide --all-namespaces $args }
-function kgpowowideall() { & kubectl get pods --watch -o=wide --all-namespaces $args }
-function kgdepwowideall() { & kubectl get deployment --watch -o=wide --all-namespaces $args }
-function kgstswowideall() { & kubectl get statefulset --watch -o=wide --all-namespaces $args }
-function kgsvcwowideall() { & kubectl get service --watch -o=wide --all-namespaces $args }
-function kgingwowideall() { & kubectl get ingress --watch -o=wide --all-namespaces $args }
-function kgcmwowideall() { & kubectl get configmap --watch -o=wide --all-namespaces $args }
-function kgsecwowideall() { & kubectl get secret --watch -o=wide --all-namespaces $args }
-function kgnswowideall() { & kubectl get namespaces --watch -o=wide --all-namespaces $args }
-function kgwallowide() { & kubectl get --watch --all-namespaces -o=wide $args }
-function kgpowallowide() { & kubectl get pods --watch --all-namespaces -o=wide $args }
-function kgdepwallowide() { & kubectl get deployment --watch --all-namespaces -o=wide $args }
-function kgstswallowide() { & kubectl get statefulset --watch --all-namespaces -o=wide $args }
-function kgsvcwallowide() { & kubectl get service --watch --all-namespaces -o=wide $args }
-function kgingwallowide() { & kubectl get ingress --watch --all-namespaces -o=wide $args }
-function kgcmwallowide() { & kubectl get configmap --watch --all-namespaces -o=wide $args }
-function kgsecwallowide() { & kubectl get secret --watch --all-namespaces -o=wide $args }
-function kgnswallowide() { & kubectl get namespaces --watch --all-namespaces -o=wide $args }
-function kgslwowide() { & kubectl get --show-labels --watch -o=wide $args }
-function ksysgslwowide() { & kubectl --namespace=kube-system get --show-labels --watch -o=wide $args }
-function kgposlwowide() { & kubectl get pods --show-labels --watch -o=wide $args }
-function ksysgposlwowide() { & kubectl --namespace=kube-system get pods --show-labels --watch -o=wide $args }
-function kgdepslwowide() { & kubectl get deployment --show-labels --watch -o=wide $args }
-function ksysgdepslwowide() { & kubectl --namespace=kube-system get deployment --show-labels --watch -o=wide $args }
-function kgstsslwowide() { & kubectl get statefulset --show-labels --watch -o=wide $args }
-function ksysgstsslwowide() { & kubectl --namespace=kube-system get statefulset --show-labels --watch -o=wide $args }
-function kgsvcslwowide() { & kubectl get service --show-labels --watch -o=wide $args }
-function ksysgsvcslwowide() { & kubectl --namespace=kube-system get service --show-labels --watch -o=wide $args }
-function kgingslwowide() { & kubectl get ingress --show-labels --watch -o=wide $args }
-function ksysgingslwowide() { & kubectl --namespace=kube-system get ingress --show-labels --watch -o=wide $args }
-function kgcmslwowide() { & kubectl get configmap --show-labels --watch -o=wide $args }
-function ksysgcmslwowide() { & kubectl --namespace=kube-system get configmap --show-labels --watch -o=wide $args }
-function kgsecslwowide() { & kubectl get secret --show-labels --watch -o=wide $args }
-function ksysgsecslwowide() { & kubectl --namespace=kube-system get secret --show-labels --watch -o=wide $args }
-function kgnoslwowide() { & kubectl get nodes --show-labels --watch -o=wide $args }
-function kgnsslwowide() { & kubectl get namespaces --show-labels --watch -o=wide $args }
-function kgwowidesl() { & kubectl get --watch -o=wide --show-labels $args }
-function ksysgwowidesl() { & kubectl --namespace=kube-system get --watch -o=wide --show-labels $args }
-function kgpowowidesl() { & kubectl get pods --watch -o=wide --show-labels $args }
-function ksysgpowowidesl() { & kubectl --namespace=kube-system get pods --watch -o=wide --show-labels $args }
-function kgdepwowidesl() { & kubectl get deployment --watch -o=wide --show-labels $args }
-function ksysgdepwowidesl() { & kubectl --namespace=kube-system get deployment --watch -o=wide --show-labels $args }
-function kgstswowidesl() { & kubectl get statefulset --watch -o=wide --show-labels $args }
-function ksysgstswowidesl() { & kubectl --namespace=kube-system get statefulset --watch -o=wide --show-labels $args }
-function kgsvcwowidesl() { & kubectl get service --watch -o=wide --show-labels $args }
-function ksysgsvcwowidesl() { & kubectl --namespace=kube-system get service --watch -o=wide --show-labels $args }
-function kgingwowidesl() { & kubectl get ingress --watch -o=wide --show-labels $args }
-function ksysgingwowidesl() { & kubectl --namespace=kube-system get ingress --watch -o=wide --show-labels $args }
-function kgcmwowidesl() { & kubectl get configmap --watch -o=wide --show-labels $args }
-function ksysgcmwowidesl() { & kubectl --namespace=kube-system get configmap --watch -o=wide --show-labels $args }
-function kgsecwowidesl() { & kubectl get secret --watch -o=wide --show-labels $args }
-function ksysgsecwowidesl() { & kubectl --namespace=kube-system get secret --watch -o=wide --show-labels $args }
-function kgnowowidesl() { & kubectl get nodes --watch -o=wide --show-labels $args }
-function kgnswowidesl() { & kubectl get namespaces --watch -o=wide --show-labels $args }
-function kgwslowide() { & kubectl get --watch --show-labels -o=wide $args }
-function ksysgwslowide() { & kubectl --namespace=kube-system get --watch --show-labels -o=wide $args }
-function kgpowslowide() { & kubectl get pods --watch --show-labels -o=wide $args }
-function ksysgpowslowide() { & kubectl --namespace=kube-system get pods --watch --show-labels -o=wide $args }
-function kgdepwslowide() { & kubectl get deployment --watch --show-labels -o=wide $args }
-function ksysgdepwslowide() { & kubectl --namespace=kube-system get deployment --watch --show-labels -o=wide $args }
-function kgstswslowide() { & kubectl get statefulset --watch --show-labels -o=wide $args }
-function ksysgstswslowide() { & kubectl --namespace=kube-system get statefulset --watch --show-labels -o=wide $args }
-function kgsvcwslowide() { & kubectl get service --watch --show-labels -o=wide $args }
-function ksysgsvcwslowide() { & kubectl --namespace=kube-system get service --watch --show-labels -o=wide $args }
-function kgingwslowide() { & kubectl get ingress --watch --show-labels -o=wide $args }
-function ksysgingwslowide() { & kubectl --namespace=kube-system get ingress --watch --show-labels -o=wide $args }
-function kgcmwslowide() { & kubectl get configmap --watch --show-labels -o=wide $args }
-function ksysgcmwslowide() { & kubectl --namespace=kube-system get configmap --watch --show-labels -o=wide $args }
-function kgsecwslowide() { & kubectl get secret --watch --show-labels -o=wide $args }
-function ksysgsecwslowide() { & kubectl --namespace=kube-system get secret --watch --show-labels -o=wide $args }
-function kgnowslowide() { & kubectl get nodes --watch --show-labels -o=wide $args }
-function kgnswslowide() { & kubectl get namespaces --watch --show-labels -o=wide $args }
-function kgallwojson() { & kubectl get --all-namespaces --watch -o=json $args }
-function kgpoallwojson() { & kubectl get pods --all-namespaces --watch -o=json $args }
-function kgdepallwojson() { & kubectl get deployment --all-namespaces --watch -o=json $args }
-function kgstsallwojson() { & kubectl get statefulset --all-namespaces --watch -o=json $args }
-function kgsvcallwojson() { & kubectl get service --all-namespaces --watch -o=json $args }
-function kgingallwojson() { & kubectl get ingress --all-namespaces --watch -o=json $args }
-function kgcmallwojson() { & kubectl get configmap --all-namespaces --watch -o=json $args }
-function kgsecallwojson() { & kubectl get secret --all-namespaces --watch -o=json $args }
-function kgnsallwojson() { & kubectl get namespaces --all-namespaces --watch -o=json $args }
-function kgwojsonall() { & kubectl get --watch -o=json --all-namespaces $args }
-function kgpowojsonall() { & kubectl get pods --watch -o=json --all-namespaces $args }
-function kgdepwojsonall() { & kubectl get deployment --watch -o=json --all-namespaces $args }
-function kgstswojsonall() { & kubectl get statefulset --watch -o=json --all-namespaces $args }
-function kgsvcwojsonall() { & kubectl get service --watch -o=json --all-namespaces $args }
-function kgingwojsonall() { & kubectl get ingress --watch -o=json --all-namespaces $args }
-function kgcmwojsonall() { & kubectl get configmap --watch -o=json --all-namespaces $args }
-function kgsecwojsonall() { & kubectl get secret --watch -o=json --all-namespaces $args }
-function kgnswojsonall() { & kubectl get namespaces --watch -o=json --all-namespaces $args }
-function kgwallojson() { & kubectl get --watch --all-namespaces -o=json $args }
-function kgpowallojson() { & kubectl get pods --watch --all-namespaces -o=json $args }
-function kgdepwallojson() { & kubectl get deployment --watch --all-namespaces -o=json $args }
-function kgstswallojson() { & kubectl get statefulset --watch --all-namespaces -o=json $args }
-function kgsvcwallojson() { & kubectl get service --watch --all-namespaces -o=json $args }
-function kgingwallojson() { & kubectl get ingress --watch --all-namespaces -o=json $args }
-function kgcmwallojson() { & kubectl get configmap --watch --all-namespaces -o=json $args }
-function kgsecwallojson() { & kubectl get secret --watch --all-namespaces -o=json $args }
-function kgnswallojson() { & kubectl get namespaces --watch --all-namespaces -o=json $args }
 function kgallslw() { & kubectl get --all-namespaces --show-labels --watch $args }
 function kgpoallslw() { & kubectl get pods --all-namespaces --show-labels --watch $args }
 function kgdepallslw() { & kubectl get deployment --all-namespaces --show-labels --watch $args }
@@ -665,114 +476,6 @@ function kgingwslall() { & kubectl get ingress --watch --show-labels --all-names
 function kgcmwslall() { & kubectl get configmap --watch --show-labels --all-namespaces $args }
 function kgsecwslall() { & kubectl get secret --watch --show-labels --all-namespaces $args }
 function kgnswslall() { & kubectl get namespaces --watch --show-labels --all-namespaces $args }
-function kgallslwowide() { & kubectl get --all-namespaces --show-labels --watch -o=wide $args }
-function kgpoallslwowide() { & kubectl get pods --all-namespaces --show-labels --watch -o=wide $args }
-function kgdepallslwowide() { & kubectl get deployment --all-namespaces --show-labels --watch -o=wide $args }
-function kgstsallslwowide() { & kubectl get statefulset --all-namespaces --show-labels --watch -o=wide $args }
-function kgsvcallslwowide() { & kubectl get service --all-namespaces --show-labels --watch -o=wide $args }
-function kgingallslwowide() { & kubectl get ingress --all-namespaces --show-labels --watch -o=wide $args }
-function kgcmallslwowide() { & kubectl get configmap --all-namespaces --show-labels --watch -o=wide $args }
-function kgsecallslwowide() { & kubectl get secret --all-namespaces --show-labels --watch -o=wide $args }
-function kgnsallslwowide() { & kubectl get namespaces --all-namespaces --show-labels --watch -o=wide $args }
-function kgallwowidesl() { & kubectl get --all-namespaces --watch -o=wide --show-labels $args }
-function kgpoallwowidesl() { & kubectl get pods --all-namespaces --watch -o=wide --show-labels $args }
-function kgdepallwowidesl() { & kubectl get deployment --all-namespaces --watch -o=wide --show-labels $args }
-function kgstsallwowidesl() { & kubectl get statefulset --all-namespaces --watch -o=wide --show-labels $args }
-function kgsvcallwowidesl() { & kubectl get service --all-namespaces --watch -o=wide --show-labels $args }
-function kgingallwowidesl() { & kubectl get ingress --all-namespaces --watch -o=wide --show-labels $args }
-function kgcmallwowidesl() { & kubectl get configmap --all-namespaces --watch -o=wide --show-labels $args }
-function kgsecallwowidesl() { & kubectl get secret --all-namespaces --watch -o=wide --show-labels $args }
-function kgnsallwowidesl() { & kubectl get namespaces --all-namespaces --watch -o=wide --show-labels $args }
-function kgallwslowide() { & kubectl get --all-namespaces --watch --show-labels -o=wide $args }
-function kgpoallwslowide() { & kubectl get pods --all-namespaces --watch --show-labels -o=wide $args }
-function kgdepallwslowide() { & kubectl get deployment --all-namespaces --watch --show-labels -o=wide $args }
-function kgstsallwslowide() { & kubectl get statefulset --all-namespaces --watch --show-labels -o=wide $args }
-function kgsvcallwslowide() { & kubectl get service --all-namespaces --watch --show-labels -o=wide $args }
-function kgingallwslowide() { & kubectl get ingress --all-namespaces --watch --show-labels -o=wide $args }
-function kgcmallwslowide() { & kubectl get configmap --all-namespaces --watch --show-labels -o=wide $args }
-function kgsecallwslowide() { & kubectl get secret --all-namespaces --watch --show-labels -o=wide $args }
-function kgnsallwslowide() { & kubectl get namespaces --all-namespaces --watch --show-labels -o=wide $args }
-function kgslallwowide() { & kubectl get --show-labels --all-namespaces --watch -o=wide $args }
-function kgposlallwowide() { & kubectl get pods --show-labels --all-namespaces --watch -o=wide $args }
-function kgdepslallwowide() { & kubectl get deployment --show-labels --all-namespaces --watch -o=wide $args }
-function kgstsslallwowide() { & kubectl get statefulset --show-labels --all-namespaces --watch -o=wide $args }
-function kgsvcslallwowide() { & kubectl get service --show-labels --all-namespaces --watch -o=wide $args }
-function kgingslallwowide() { & kubectl get ingress --show-labels --all-namespaces --watch -o=wide $args }
-function kgcmslallwowide() { & kubectl get configmap --show-labels --all-namespaces --watch -o=wide $args }
-function kgsecslallwowide() { & kubectl get secret --show-labels --all-namespaces --watch -o=wide $args }
-function kgnsslallwowide() { & kubectl get namespaces --show-labels --all-namespaces --watch -o=wide $args }
-function kgslwowideall() { & kubectl get --show-labels --watch -o=wide --all-namespaces $args }
-function kgposlwowideall() { & kubectl get pods --show-labels --watch -o=wide --all-namespaces $args }
-function kgdepslwowideall() { & kubectl get deployment --show-labels --watch -o=wide --all-namespaces $args }
-function kgstsslwowideall() { & kubectl get statefulset --show-labels --watch -o=wide --all-namespaces $args }
-function kgsvcslwowideall() { & kubectl get service --show-labels --watch -o=wide --all-namespaces $args }
-function kgingslwowideall() { & kubectl get ingress --show-labels --watch -o=wide --all-namespaces $args }
-function kgcmslwowideall() { & kubectl get configmap --show-labels --watch -o=wide --all-namespaces $args }
-function kgsecslwowideall() { & kubectl get secret --show-labels --watch -o=wide --all-namespaces $args }
-function kgnsslwowideall() { & kubectl get namespaces --show-labels --watch -o=wide --all-namespaces $args }
-function kgslwallowide() { & kubectl get --show-labels --watch --all-namespaces -o=wide $args }
-function kgposlwallowide() { & kubectl get pods --show-labels --watch --all-namespaces -o=wide $args }
-function kgdepslwallowide() { & kubectl get deployment --show-labels --watch --all-namespaces -o=wide $args }
-function kgstsslwallowide() { & kubectl get statefulset --show-labels --watch --all-namespaces -o=wide $args }
-function kgsvcslwallowide() { & kubectl get service --show-labels --watch --all-namespaces -o=wide $args }
-function kgingslwallowide() { & kubectl get ingress --show-labels --watch --all-namespaces -o=wide $args }
-function kgcmslwallowide() { & kubectl get configmap --show-labels --watch --all-namespaces -o=wide $args }
-function kgsecslwallowide() { & kubectl get secret --show-labels --watch --all-namespaces -o=wide $args }
-function kgnsslwallowide() { & kubectl get namespaces --show-labels --watch --all-namespaces -o=wide $args }
-function kgwowideallsl() { & kubectl get --watch -o=wide --all-namespaces --show-labels $args }
-function kgpowowideallsl() { & kubectl get pods --watch -o=wide --all-namespaces --show-labels $args }
-function kgdepwowideallsl() { & kubectl get deployment --watch -o=wide --all-namespaces --show-labels $args }
-function kgstswowideallsl() { & kubectl get statefulset --watch -o=wide --all-namespaces --show-labels $args }
-function kgsvcwowideallsl() { & kubectl get service --watch -o=wide --all-namespaces --show-labels $args }
-function kgingwowideallsl() { & kubectl get ingress --watch -o=wide --all-namespaces --show-labels $args }
-function kgcmwowideallsl() { & kubectl get configmap --watch -o=wide --all-namespaces --show-labels $args }
-function kgsecwowideallsl() { & kubectl get secret --watch -o=wide --all-namespaces --show-labels $args }
-function kgnswowideallsl() { & kubectl get namespaces --watch -o=wide --all-namespaces --show-labels $args }
-function kgwowideslall() { & kubectl get --watch -o=wide --show-labels --all-namespaces $args }
-function kgpowowideslall() { & kubectl get pods --watch -o=wide --show-labels --all-namespaces $args }
-function kgdepwowideslall() { & kubectl get deployment --watch -o=wide --show-labels --all-namespaces $args }
-function kgstswowideslall() { & kubectl get statefulset --watch -o=wide --show-labels --all-namespaces $args }
-function kgsvcwowideslall() { & kubectl get service --watch -o=wide --show-labels --all-namespaces $args }
-function kgingwowideslall() { & kubectl get ingress --watch -o=wide --show-labels --all-namespaces $args }
-function kgcmwowideslall() { & kubectl get configmap --watch -o=wide --show-labels --all-namespaces $args }
-function kgsecwowideslall() { & kubectl get secret --watch -o=wide --show-labels --all-namespaces $args }
-function kgnswowideslall() { & kubectl get namespaces --watch -o=wide --show-labels --all-namespaces $args }
-function kgwallowidesl() { & kubectl get --watch --all-namespaces -o=wide --show-labels $args }
-function kgpowallowidesl() { & kubectl get pods --watch --all-namespaces -o=wide --show-labels $args }
-function kgdepwallowidesl() { & kubectl get deployment --watch --all-namespaces -o=wide --show-labels $args }
-function kgstswallowidesl() { & kubectl get statefulset --watch --all-namespaces -o=wide --show-labels $args }
-function kgsvcwallowidesl() { & kubectl get service --watch --all-namespaces -o=wide --show-labels $args }
-function kgingwallowidesl() { & kubectl get ingress --watch --all-namespaces -o=wide --show-labels $args }
-function kgcmwallowidesl() { & kubectl get configmap --watch --all-namespaces -o=wide --show-labels $args }
-function kgsecwallowidesl() { & kubectl get secret --watch --all-namespaces -o=wide --show-labels $args }
-function kgnswallowidesl() { & kubectl get namespaces --watch --all-namespaces -o=wide --show-labels $args }
-function kgwallslowide() { & kubectl get --watch --all-namespaces --show-labels -o=wide $args }
-function kgpowallslowide() { & kubectl get pods --watch --all-namespaces --show-labels -o=wide $args }
-function kgdepwallslowide() { & kubectl get deployment --watch --all-namespaces --show-labels -o=wide $args }
-function kgstswallslowide() { & kubectl get statefulset --watch --all-namespaces --show-labels -o=wide $args }
-function kgsvcwallslowide() { & kubectl get service --watch --all-namespaces --show-labels -o=wide $args }
-function kgingwallslowide() { & kubectl get ingress --watch --all-namespaces --show-labels -o=wide $args }
-function kgcmwallslowide() { & kubectl get configmap --watch --all-namespaces --show-labels -o=wide $args }
-function kgsecwallslowide() { & kubectl get secret --watch --all-namespaces --show-labels -o=wide $args }
-function kgnswallslowide() { & kubectl get namespaces --watch --all-namespaces --show-labels -o=wide $args }
-function kgwslowideall() { & kubectl get --watch --show-labels -o=wide --all-namespaces $args }
-function kgpowslowideall() { & kubectl get pods --watch --show-labels -o=wide --all-namespaces $args }
-function kgdepwslowideall() { & kubectl get deployment --watch --show-labels -o=wide --all-namespaces $args }
-function kgstswslowideall() { & kubectl get statefulset --watch --show-labels -o=wide --all-namespaces $args }
-function kgsvcwslowideall() { & kubectl get service --watch --show-labels -o=wide --all-namespaces $args }
-function kgingwslowideall() { & kubectl get ingress --watch --show-labels -o=wide --all-namespaces $args }
-function kgcmwslowideall() { & kubectl get configmap --watch --show-labels -o=wide --all-namespaces $args }
-function kgsecwslowideall() { & kubectl get secret --watch --show-labels -o=wide --all-namespaces $args }
-function kgnswslowideall() { & kubectl get namespaces --watch --show-labels -o=wide --all-namespaces $args }
-function kgwslallowide() { & kubectl get --watch --show-labels --all-namespaces -o=wide $args }
-function kgpowslallowide() { & kubectl get pods --watch --show-labels --all-namespaces -o=wide $args }
-function kgdepwslallowide() { & kubectl get deployment --watch --show-labels --all-namespaces -o=wide $args }
-function kgstswslallowide() { & kubectl get statefulset --watch --show-labels --all-namespaces -o=wide $args }
-function kgsvcwslallowide() { & kubectl get service --watch --show-labels --all-namespaces -o=wide $args }
-function kgingwslallowide() { & kubectl get ingress --watch --show-labels --all-namespaces -o=wide $args }
-function kgcmwslallowide() { & kubectl get configmap --watch --show-labels --all-namespaces -o=wide $args }
-function kgsecwslallowide() { & kubectl get secret --watch --show-labels --all-namespaces -o=wide $args }
-function kgnswslallowide() { & kubectl get namespaces --watch --show-labels --all-namespaces -o=wide $args }
 function kgf() { & kubectl get --recursive -f $args }
 function kdf() { & kubectl describe --recursive -f $args }
 function krmf() { & kubectl delete --recursive -f $args }
@@ -781,16 +484,10 @@ function kgowidef() { & kubectl get -o=wide --recursive -f $args }
 function kgojsonf() { & kubectl get -o=json --recursive -f $args }
 function kgslf() { & kubectl get --show-labels --recursive -f $args }
 function kgwf() { & kubectl get --watch --recursive -f $args }
-function kgwoyamlf() { & kubectl get --watch -o=yaml --recursive -f $args }
 function kgowideslf() { & kubectl get -o=wide --show-labels --recursive -f $args }
 function kgslowidef() { & kubectl get --show-labels -o=wide --recursive -f $args }
-function kgwowidef() { & kubectl get --watch -o=wide --recursive -f $args }
-function kgwojsonf() { & kubectl get --watch -o=json --recursive -f $args }
 function kgslwf() { & kubectl get --show-labels --watch --recursive -f $args }
 function kgwslf() { & kubectl get --watch --show-labels --recursive -f $args }
-function kgslwowidef() { & kubectl get --show-labels --watch -o=wide --recursive -f $args }
-function kgwowideslf() { & kubectl get --watch -o=wide --show-labels --recursive -f $args }
-function kgwslowidef() { & kubectl get --watch --show-labels -o=wide --recursive -f $args }
 function kgl() { & kubectl get -l $args }
 function ksysgl() { & kubectl --namespace=kube-system get -l $args }
 function kdl() { & kubectl describe -l $args }
@@ -934,24 +631,6 @@ function kgsecwl() { & kubectl get secret --watch -l $args }
 function ksysgsecwl() { & kubectl --namespace=kube-system get secret --watch -l $args }
 function kgnowl() { & kubectl get nodes --watch -l $args }
 function kgnswl() { & kubectl get namespaces --watch -l $args }
-function kgwoyamll() { & kubectl get --watch -o=yaml -l $args }
-function ksysgwoyamll() { & kubectl --namespace=kube-system get --watch -o=yaml -l $args }
-function kgpowoyamll() { & kubectl get pods --watch -o=yaml -l $args }
-function ksysgpowoyamll() { & kubectl --namespace=kube-system get pods --watch -o=yaml -l $args }
-function kgdepwoyamll() { & kubectl get deployment --watch -o=yaml -l $args }
-function ksysgdepwoyamll() { & kubectl --namespace=kube-system get deployment --watch -o=yaml -l $args }
-function kgstswoyamll() { & kubectl get statefulset --watch -o=yaml -l $args }
-function ksysgstswoyamll() { & kubectl --namespace=kube-system get statefulset --watch -o=yaml -l $args }
-function kgsvcwoyamll() { & kubectl get service --watch -o=yaml -l $args }
-function ksysgsvcwoyamll() { & kubectl --namespace=kube-system get service --watch -o=yaml -l $args }
-function kgingwoyamll() { & kubectl get ingress --watch -o=yaml -l $args }
-function ksysgingwoyamll() { & kubectl --namespace=kube-system get ingress --watch -o=yaml -l $args }
-function kgcmwoyamll() { & kubectl get configmap --watch -o=yaml -l $args }
-function ksysgcmwoyamll() { & kubectl --namespace=kube-system get configmap --watch -o=yaml -l $args }
-function kgsecwoyamll() { & kubectl get secret --watch -o=yaml -l $args }
-function ksysgsecwoyamll() { & kubectl --namespace=kube-system get secret --watch -o=yaml -l $args }
-function kgnowoyamll() { & kubectl get nodes --watch -o=yaml -l $args }
-function kgnswoyamll() { & kubectl get namespaces --watch -o=yaml -l $args }
 function kgowidesll() { & kubectl get -o=wide --show-labels -l $args }
 function ksysgowidesll() { & kubectl --namespace=kube-system get -o=wide --show-labels -l $args }
 function kgpoowidesll() { & kubectl get pods -o=wide --show-labels -l $args }
@@ -988,42 +667,6 @@ function kgsecslowidel() { & kubectl get secret --show-labels -o=wide -l $args }
 function ksysgsecslowidel() { & kubectl --namespace=kube-system get secret --show-labels -o=wide -l $args }
 function kgnoslowidel() { & kubectl get nodes --show-labels -o=wide -l $args }
 function kgnsslowidel() { & kubectl get namespaces --show-labels -o=wide -l $args }
-function kgwowidel() { & kubectl get --watch -o=wide -l $args }
-function ksysgwowidel() { & kubectl --namespace=kube-system get --watch -o=wide -l $args }
-function kgpowowidel() { & kubectl get pods --watch -o=wide -l $args }
-function ksysgpowowidel() { & kubectl --namespace=kube-system get pods --watch -o=wide -l $args }
-function kgdepwowidel() { & kubectl get deployment --watch -o=wide -l $args }
-function ksysgdepwowidel() { & kubectl --namespace=kube-system get deployment --watch -o=wide -l $args }
-function kgstswowidel() { & kubectl get statefulset --watch -o=wide -l $args }
-function ksysgstswowidel() { & kubectl --namespace=kube-system get statefulset --watch -o=wide -l $args }
-function kgsvcwowidel() { & kubectl get service --watch -o=wide -l $args }
-function ksysgsvcwowidel() { & kubectl --namespace=kube-system get service --watch -o=wide -l $args }
-function kgingwowidel() { & kubectl get ingress --watch -o=wide -l $args }
-function ksysgingwowidel() { & kubectl --namespace=kube-system get ingress --watch -o=wide -l $args }
-function kgcmwowidel() { & kubectl get configmap --watch -o=wide -l $args }
-function ksysgcmwowidel() { & kubectl --namespace=kube-system get configmap --watch -o=wide -l $args }
-function kgsecwowidel() { & kubectl get secret --watch -o=wide -l $args }
-function ksysgsecwowidel() { & kubectl --namespace=kube-system get secret --watch -o=wide -l $args }
-function kgnowowidel() { & kubectl get nodes --watch -o=wide -l $args }
-function kgnswowidel() { & kubectl get namespaces --watch -o=wide -l $args }
-function kgwojsonl() { & kubectl get --watch -o=json -l $args }
-function ksysgwojsonl() { & kubectl --namespace=kube-system get --watch -o=json -l $args }
-function kgpowojsonl() { & kubectl get pods --watch -o=json -l $args }
-function ksysgpowojsonl() { & kubectl --namespace=kube-system get pods --watch -o=json -l $args }
-function kgdepwojsonl() { & kubectl get deployment --watch -o=json -l $args }
-function ksysgdepwojsonl() { & kubectl --namespace=kube-system get deployment --watch -o=json -l $args }
-function kgstswojsonl() { & kubectl get statefulset --watch -o=json -l $args }
-function ksysgstswojsonl() { & kubectl --namespace=kube-system get statefulset --watch -o=json -l $args }
-function kgsvcwojsonl() { & kubectl get service --watch -o=json -l $args }
-function ksysgsvcwojsonl() { & kubectl --namespace=kube-system get service --watch -o=json -l $args }
-function kgingwojsonl() { & kubectl get ingress --watch -o=json -l $args }
-function ksysgingwojsonl() { & kubectl --namespace=kube-system get ingress --watch -o=json -l $args }
-function kgcmwojsonl() { & kubectl get configmap --watch -o=json -l $args }
-function ksysgcmwojsonl() { & kubectl --namespace=kube-system get configmap --watch -o=json -l $args }
-function kgsecwojsonl() { & kubectl get secret --watch -o=json -l $args }
-function ksysgsecwojsonl() { & kubectl --namespace=kube-system get secret --watch -o=json -l $args }
-function kgnowojsonl() { & kubectl get nodes --watch -o=json -l $args }
-function kgnswojsonl() { & kubectl get namespaces --watch -o=json -l $args }
 function kgslwl() { & kubectl get --show-labels --watch -l $args }
 function ksysgslwl() { & kubectl --namespace=kube-system get --show-labels --watch -l $args }
 function kgposlwl() { & kubectl get pods --show-labels --watch -l $args }
@@ -1060,60 +703,6 @@ function kgsecwsll() { & kubectl get secret --watch --show-labels -l $args }
 function ksysgsecwsll() { & kubectl --namespace=kube-system get secret --watch --show-labels -l $args }
 function kgnowsll() { & kubectl get nodes --watch --show-labels -l $args }
 function kgnswsll() { & kubectl get namespaces --watch --show-labels -l $args }
-function kgslwowidel() { & kubectl get --show-labels --watch -o=wide -l $args }
-function ksysgslwowidel() { & kubectl --namespace=kube-system get --show-labels --watch -o=wide -l $args }
-function kgposlwowidel() { & kubectl get pods --show-labels --watch -o=wide -l $args }
-function ksysgposlwowidel() { & kubectl --namespace=kube-system get pods --show-labels --watch -o=wide -l $args }
-function kgdepslwowidel() { & kubectl get deployment --show-labels --watch -o=wide -l $args }
-function ksysgdepslwowidel() { & kubectl --namespace=kube-system get deployment --show-labels --watch -o=wide -l $args }
-function kgstsslwowidel() { & kubectl get statefulset --show-labels --watch -o=wide -l $args }
-function ksysgstsslwowidel() { & kubectl --namespace=kube-system get statefulset --show-labels --watch -o=wide -l $args }
-function kgsvcslwowidel() { & kubectl get service --show-labels --watch -o=wide -l $args }
-function ksysgsvcslwowidel() { & kubectl --namespace=kube-system get service --show-labels --watch -o=wide -l $args }
-function kgingslwowidel() { & kubectl get ingress --show-labels --watch -o=wide -l $args }
-function ksysgingslwowidel() { & kubectl --namespace=kube-system get ingress --show-labels --watch -o=wide -l $args }
-function kgcmslwowidel() { & kubectl get configmap --show-labels --watch -o=wide -l $args }
-function ksysgcmslwowidel() { & kubectl --namespace=kube-system get configmap --show-labels --watch -o=wide -l $args }
-function kgsecslwowidel() { & kubectl get secret --show-labels --watch -o=wide -l $args }
-function ksysgsecslwowidel() { & kubectl --namespace=kube-system get secret --show-labels --watch -o=wide -l $args }
-function kgnoslwowidel() { & kubectl get nodes --show-labels --watch -o=wide -l $args }
-function kgnsslwowidel() { & kubectl get namespaces --show-labels --watch -o=wide -l $args }
-function kgwowidesll() { & kubectl get --watch -o=wide --show-labels -l $args }
-function ksysgwowidesll() { & kubectl --namespace=kube-system get --watch -o=wide --show-labels -l $args }
-function kgpowowidesll() { & kubectl get pods --watch -o=wide --show-labels -l $args }
-function ksysgpowowidesll() { & kubectl --namespace=kube-system get pods --watch -o=wide --show-labels -l $args }
-function kgdepwowidesll() { & kubectl get deployment --watch -o=wide --show-labels -l $args }
-function ksysgdepwowidesll() { & kubectl --namespace=kube-system get deployment --watch -o=wide --show-labels -l $args }
-function kgstswowidesll() { & kubectl get statefulset --watch -o=wide --show-labels -l $args }
-function ksysgstswowidesll() { & kubectl --namespace=kube-system get statefulset --watch -o=wide --show-labels -l $args }
-function kgsvcwowidesll() { & kubectl get service --watch -o=wide --show-labels -l $args }
-function ksysgsvcwowidesll() { & kubectl --namespace=kube-system get service --watch -o=wide --show-labels -l $args }
-function kgingwowidesll() { & kubectl get ingress --watch -o=wide --show-labels -l $args }
-function ksysgingwowidesll() { & kubectl --namespace=kube-system get ingress --watch -o=wide --show-labels -l $args }
-function kgcmwowidesll() { & kubectl get configmap --watch -o=wide --show-labels -l $args }
-function ksysgcmwowidesll() { & kubectl --namespace=kube-system get configmap --watch -o=wide --show-labels -l $args }
-function kgsecwowidesll() { & kubectl get secret --watch -o=wide --show-labels -l $args }
-function ksysgsecwowidesll() { & kubectl --namespace=kube-system get secret --watch -o=wide --show-labels -l $args }
-function kgnowowidesll() { & kubectl get nodes --watch -o=wide --show-labels -l $args }
-function kgnswowidesll() { & kubectl get namespaces --watch -o=wide --show-labels -l $args }
-function kgwslowidel() { & kubectl get --watch --show-labels -o=wide -l $args }
-function ksysgwslowidel() { & kubectl --namespace=kube-system get --watch --show-labels -o=wide -l $args }
-function kgpowslowidel() { & kubectl get pods --watch --show-labels -o=wide -l $args }
-function ksysgpowslowidel() { & kubectl --namespace=kube-system get pods --watch --show-labels -o=wide -l $args }
-function kgdepwslowidel() { & kubectl get deployment --watch --show-labels -o=wide -l $args }
-function ksysgdepwslowidel() { & kubectl --namespace=kube-system get deployment --watch --show-labels -o=wide -l $args }
-function kgstswslowidel() { & kubectl get statefulset --watch --show-labels -o=wide -l $args }
-function ksysgstswslowidel() { & kubectl --namespace=kube-system get statefulset --watch --show-labels -o=wide -l $args }
-function kgsvcwslowidel() { & kubectl get service --watch --show-labels -o=wide -l $args }
-function ksysgsvcwslowidel() { & kubectl --namespace=kube-system get service --watch --show-labels -o=wide -l $args }
-function kgingwslowidel() { & kubectl get ingress --watch --show-labels -o=wide -l $args }
-function ksysgingwslowidel() { & kubectl --namespace=kube-system get ingress --watch --show-labels -o=wide -l $args }
-function kgcmwslowidel() { & kubectl get configmap --watch --show-labels -o=wide -l $args }
-function ksysgcmwslowidel() { & kubectl --namespace=kube-system get configmap --watch --show-labels -o=wide -l $args }
-function kgsecwslowidel() { & kubectl get secret --watch --show-labels -o=wide -l $args }
-function ksysgsecwslowidel() { & kubectl --namespace=kube-system get secret --watch --show-labels -o=wide -l $args }
-function kgnowslowidel() { & kubectl get nodes --watch --show-labels -o=wide -l $args }
-function kgnswslowidel() { & kubectl get namespaces --watch --show-labels -o=wide -l $args }
 function kexn() { & kubectl exec -i -t --namespace $args }
 function klon() { & kubectl logs -f --namespace $args }
 function kpfn() { & kubectl port-forward --namespace $args }
@@ -1181,14 +770,6 @@ function kgsvcwn() { & kubectl get service --watch --namespace $args }
 function kgingwn() { & kubectl get ingress --watch --namespace $args }
 function kgcmwn() { & kubectl get configmap --watch --namespace $args }
 function kgsecwn() { & kubectl get secret --watch --namespace $args }
-function kgwoyamln() { & kubectl get --watch -o=yaml --namespace $args }
-function kgpowoyamln() { & kubectl get pods --watch -o=yaml --namespace $args }
-function kgdepwoyamln() { & kubectl get deployment --watch -o=yaml --namespace $args }
-function kgstswoyamln() { & kubectl get statefulset --watch -o=yaml --namespace $args }
-function kgsvcwoyamln() { & kubectl get service --watch -o=yaml --namespace $args }
-function kgingwoyamln() { & kubectl get ingress --watch -o=yaml --namespace $args }
-function kgcmwoyamln() { & kubectl get configmap --watch -o=yaml --namespace $args }
-function kgsecwoyamln() { & kubectl get secret --watch -o=yaml --namespace $args }
 function kgowidesln() { & kubectl get -o=wide --show-labels --namespace $args }
 function kgpoowidesln() { & kubectl get pods -o=wide --show-labels --namespace $args }
 function kgdepowidesln() { & kubectl get deployment -o=wide --show-labels --namespace $args }
@@ -1205,22 +786,6 @@ function kgsvcslowiden() { & kubectl get service --show-labels -o=wide --namespa
 function kgingslowiden() { & kubectl get ingress --show-labels -o=wide --namespace $args }
 function kgcmslowiden() { & kubectl get configmap --show-labels -o=wide --namespace $args }
 function kgsecslowiden() { & kubectl get secret --show-labels -o=wide --namespace $args }
-function kgwowiden() { & kubectl get --watch -o=wide --namespace $args }
-function kgpowowiden() { & kubectl get pods --watch -o=wide --namespace $args }
-function kgdepwowiden() { & kubectl get deployment --watch -o=wide --namespace $args }
-function kgstswowiden() { & kubectl get statefulset --watch -o=wide --namespace $args }
-function kgsvcwowiden() { & kubectl get service --watch -o=wide --namespace $args }
-function kgingwowiden() { & kubectl get ingress --watch -o=wide --namespace $args }
-function kgcmwowiden() { & kubectl get configmap --watch -o=wide --namespace $args }
-function kgsecwowiden() { & kubectl get secret --watch -o=wide --namespace $args }
-function kgwojsonn() { & kubectl get --watch -o=json --namespace $args }
-function kgpowojsonn() { & kubectl get pods --watch -o=json --namespace $args }
-function kgdepwojsonn() { & kubectl get deployment --watch -o=json --namespace $args }
-function kgstswojsonn() { & kubectl get statefulset --watch -o=json --namespace $args }
-function kgsvcwojsonn() { & kubectl get service --watch -o=json --namespace $args }
-function kgingwojsonn() { & kubectl get ingress --watch -o=json --namespace $args }
-function kgcmwojsonn() { & kubectl get configmap --watch -o=json --namespace $args }
-function kgsecwojsonn() { & kubectl get secret --watch -o=json --namespace $args }
 function kgslwn() { & kubectl get --show-labels --watch --namespace $args }
 function kgposlwn() { & kubectl get pods --show-labels --watch --namespace $args }
 function kgdepslwn() { & kubectl get deployment --show-labels --watch --namespace $args }
@@ -1237,27 +802,3 @@ function kgsvcwsln() { & kubectl get service --watch --show-labels --namespace $
 function kgingwsln() { & kubectl get ingress --watch --show-labels --namespace $args }
 function kgcmwsln() { & kubectl get configmap --watch --show-labels --namespace $args }
 function kgsecwsln() { & kubectl get secret --watch --show-labels --namespace $args }
-function kgslwowiden() { & kubectl get --show-labels --watch -o=wide --namespace $args }
-function kgposlwowiden() { & kubectl get pods --show-labels --watch -o=wide --namespace $args }
-function kgdepslwowiden() { & kubectl get deployment --show-labels --watch -o=wide --namespace $args }
-function kgstsslwowiden() { & kubectl get statefulset --show-labels --watch -o=wide --namespace $args }
-function kgsvcslwowiden() { & kubectl get service --show-labels --watch -o=wide --namespace $args }
-function kgingslwowiden() { & kubectl get ingress --show-labels --watch -o=wide --namespace $args }
-function kgcmslwowiden() { & kubectl get configmap --show-labels --watch -o=wide --namespace $args }
-function kgsecslwowiden() { & kubectl get secret --show-labels --watch -o=wide --namespace $args }
-function kgwowidesln() { & kubectl get --watch -o=wide --show-labels --namespace $args }
-function kgpowowidesln() { & kubectl get pods --watch -o=wide --show-labels --namespace $args }
-function kgdepwowidesln() { & kubectl get deployment --watch -o=wide --show-labels --namespace $args }
-function kgstswowidesln() { & kubectl get statefulset --watch -o=wide --show-labels --namespace $args }
-function kgsvcwowidesln() { & kubectl get service --watch -o=wide --show-labels --namespace $args }
-function kgingwowidesln() { & kubectl get ingress --watch -o=wide --show-labels --namespace $args }
-function kgcmwowidesln() { & kubectl get configmap --watch -o=wide --show-labels --namespace $args }
-function kgsecwowidesln() { & kubectl get secret --watch -o=wide --show-labels --namespace $args }
-function kgwslowiden() { & kubectl get --watch --show-labels -o=wide --namespace $args }
-function kgpowslowiden() { & kubectl get pods --watch --show-labels -o=wide --namespace $args }
-function kgdepwslowiden() { & kubectl get deployment --watch --show-labels -o=wide --namespace $args }
-function kgstswslowiden() { & kubectl get statefulset --watch --show-labels -o=wide --namespace $args }
-function kgsvcwslowiden() { & kubectl get service --watch --show-labels -o=wide --namespace $args }
-function kgingwslowiden() { & kubectl get ingress --watch --show-labels -o=wide --namespace $args }
-function kgcmwslowiden() { & kubectl get configmap --watch --show-labels -o=wide --namespace $args }
-function kgsecwslowiden() { & kubectl get secret --watch --show-labels -o=wide --namespace $args }
